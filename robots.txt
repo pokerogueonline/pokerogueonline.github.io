@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pokerogueonline.github.io/sitemap.xml

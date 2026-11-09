@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pokerogue Online – PokéRogue Multiplayer: Co-op, Live PvP & Trades in your Browser</title>
+  <meta name="description" content="Pokerogue Online is a free, fan-made multiplayer version of PokéRogue: play co-op runs with a friend, live PvP battles, Quick Match with a leaderboard, trades and a casino, right in your browser. Unofficial, not affiliated with PokéRogue or Pagefault Games." />
+  <meta name="keywords" content="pokerogue multiplayer, pokerogue online, pokerogue co-op, pokerogue pvp, pokerogue versus, pokerogue mod, pokemon roguelite multiplayer" />
+  <link rel="canonical" href="https://pokerogueonline.github.io/" />
+  <meta name="theme-color" content="#da3838" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pokerogue Online" />
+  <meta property="og:title" content="Pokerogue Online – PokéRogue Multiplayer" />
+  <meta property="og:description" content="Co-op runs, live PvP battles, Quick Match, trades and a casino. Free, in your browser. Unofficial fan-made mod." />
+  <meta property="og:url" content="https://pokerogueonline.github.io/" />
+  <meta property="og:image" content="https://pokerogueonline.github.io/img/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pokerogue Online – PokéRogue Multiplayer" />
+  <meta name="twitter:description" content="Co-op runs, live PvP battles, Quick Match, trades and a casino. Free, in your browser." />
+  <meta name="twitter:image" content="https://pokerogueonline.github.io/img/og-image.jpg" />
+  <link rel="icon" type="image/png" href="img/icon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Pokerogue Online",
+    "alternateName": ["PokéRogue Multiplayer", "Pokerogue Multiplayer", "PokeRogue Online"],
+    "description": "A free, fan-made multiplayer version of PokéRogue, the Pokémon roguelite, with co-op runs, live PvP battles, Quick Match, trades and a casino. Unofficial, not affiliated with PokéRogue or Pagefault Games.",
+    "url": "https://pokerogueonline.github.io/",
+    "image": "https://pokerogueonline.github.io/img/og-image.jpg",
+    "genre": ["Roguelite", "Turn-based RPG", "Multiplayer"],
+    "gamePlatform": ["Web browser", "PC", "Mobile"],
+    "playMode": ["SinglePlayer", "MultiPlayer", "CoOp"],
+    "applicationCategory": "Game",
+    "operatingSystem": "Any (web browser)",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": { "@type": "Person", "name": "RaFa" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is there a multiplayer version of PokéRogue?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes: Pokerogue Online is a fan-made mod of PokéRogue that adds co-op runs with a friend, live PvP battles, Quick Match with a leaderboard and trades." } },
+      { "@type": "Question", "name": "Is Pokerogue Online free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, it is free and runs in your web browser on PC and phone, with nothing to install." } },
+      { "@type": "Question", "name": "Is Pokerogue Online the official PokéRogue?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. It is an unofficial, fan-made mod, not affiliated with PokéRogue or Pagefault Games." } }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #17141f;
+      --panel: #241f31;
+      --line: #3a3150;
+      --red: #da3838;
+      --red-dark: #a82a2a;
+      --text: #f2eefa;
+      --muted: #b3aac6;
+      --gold: #f8d030;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    a { color: var(--gold); }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+    .pixel { font-family: "Press Start 2P", monospace; letter-spacing: .02em; }
+
+    header.hero { padding: 56px 0 40px; text-align: center; background: radial-gradient(ellipse at top, #3a1f3a 0%, var(--bg) 70%); }
+    .hero h1 { font-size: clamp(22px, 5vw, 40px); line-height: 1.35; margin: 0 0 18px; text-shadow: 3px 3px 0 var(--red-dark); }
+    .hero p.lead { font-size: clamp(16px, 2.4vw, 20px); color: var(--muted); max-width: 720px; margin: 0 auto 28px; }
+    .cta { display: inline-block; padding: 18px 34px; background: var(--red); color: #fff; text-decoration: none; border: 4px solid #fff; box-shadow: 6px 6px 0 #000; font-size: 18px; }
+    .cta:hover { background: #f04848; transform: translate(-2px, -2px); box-shadow: 8px 8px 0 #000; }
+    .cta-note { display: block; margin-top: 14px; color: var(--muted); font-size: 14px; }
+    .hero .shot { margin: 40px auto 0; max-width: 860px; }
+
+    .shot img, figure img { width: 100%; height: auto; display: block; image-rendering: pixelated; border: 4px solid var(--line); border-radius: 6px; }
+
+    section { padding: 48px 0; }
+    section h2 { font-size: clamp(16px, 3vw, 22px); margin: 0 0 24px; color: var(--gold); line-height: 1.5; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+    .feature { background: var(--panel); border: 3px solid var(--line); border-radius: 6px; padding: 20px; }
+    .feature h3 { margin: 0 0 8px; font-size: 19px; }
+    .feature p { margin: 0; color: var(--muted); }
+
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+    figure { margin: 0; }
+    figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; }
+
+    .faq details { background: var(--panel); border: 3px solid var(--line); border-radius: 6px; padding: 14px 18px; margin-bottom: 12px; }
+    .faq summary { cursor: pointer; font-weight: 650; }
+    .faq p { color: var(--muted); margin: 10px 0 0; }
+
+    .bottom-cta { text-align: center; }
+    footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; text-align: center; border-top: 3px solid var(--line); }
+    footer p { margin: 6px 0; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <h1 class="pixel">Pokerogue Online<br />PokéRogue Multiplayer</h1>
+      <p class="lead">
+        The Pokémon roguelite you love, now with friends: <strong>co-op runs</strong>, <strong>live PvP battles</strong>,
+        <strong>Quick Match</strong>, <strong>trades</strong> and a <strong>casino</strong>. Free, right in your browser.
+      </p>
+      <a class="cta pixel" href="https://pokerogueonline.coydog-paridae.ts.net/">▶ PLAY NOW</a>
+      <span class="cta-note">Free · PC &amp; phone · Nothing to install · Create an account in 10 seconds</span>
+      <div class="shot">
+        <img src="img/title.webp" width="1280" height="720" alt="Pokerogue Online title screen" fetchpriority="high" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="features">
+      <div class="wrap">
+        <h2 class="pixel">Multiplayer modes</h2>
+        <div class="features">
+          <article class="feature">
+            <h3>🤝 Co-op runs</h3>
+            <p>Play a whole run with a friend. At the boss and key trainer battles you both meet up and fight a double battle together, each with your own Pokémon.</p>
+          </article>
+          <article class="feature">
+            <h3>⚔️ Live Versus (PvP)</h3>
+            <p>Both players race through a run on a clock, then battle each other for real. Best of 3: the first to win 2 battles takes the match.</p>
+          </article>
+          <article class="feature">
+            <h3>⚡ Quick Match</h3>
+            <p>Find an opponent in one click. Fair rules for everyone, and every win counts on the Quick Match leaderboard.</p>
+          </article>
+          <article class="feature">
+            <h3>🔁 Trades</h3>
+            <p>Open a trade room with a friend and swap Pokémon between your games.</p>
+          </article>
+          <article class="feature">
+            <h3>🎰 Casino &amp; gems</h3>
+            <p>Earn gems by winning battles and matches, then try your luck at roulette, crash, blackjack, slots and plinko, or spend them on egg vouchers and upgrades.</p>
+          </article>
+          <article class="feature">
+            <h3>🎮 Still PokéRogue</h3>
+            <p>All of the original game is there: Classic runs, starters, eggs, the Pokédex, plus a faster Classic mode and new completion goals.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots">
+      <div class="wrap">
+        <h2 class="pixel">Screenshots</h2>
+        <div class="gallery">
+          <figure><img src="img/live-versus-battle.webp" width="1280" height="720" loading="lazy" alt="A live PvP battle between two players in Pokerogue Online" /><figcaption>Live Versus: a real battle against another player.</figcaption></figure>
+          <figure><img src="img/online-menu.webp" width="1280" height="720" loading="lazy" alt="Online Play menu with Quick Match, versus, co-op and trade rooms" /><figcaption>The Online Play menu: Quick Match, Versus, Co-op and Trades.</figcaption></figure>
+          <figure><img src="img/live-versus-moves.webp" width="1280" height="720" loading="lazy" alt="Choosing a move during a live PvP battle" /><figcaption>Choosing your move while your opponent picks theirs.</figcaption></figure>
+          <figure><img src="img/match-won.webp" width="1280" height="720" loading="lazy" alt="Match won screen with gems earned" /><figcaption>Win the match, earn gems.</figcaption></figure>
+          <figure><img src="img/casino-slots.webp" width="1280" height="720" loading="lazy" alt="Slot machine in the Pokerogue Online casino" /><figcaption>The casino's slot machine.</figcaption></figure>
+          <figure><img src="img/casino-plinko.webp" width="1280" height="720" loading="lazy" alt="Plinko game in the Pokerogue Online casino" /><figcaption>Plinko: the edges pay up to 12x.</figcaption></figure>
+          <figure><img src="img/starter-select.webp" width="1280" height="720" loading="lazy" alt="Starter selection screen" /><figcaption>Pick your starters, like in PokéRogue.</figcaption></figure>
+          <figure><img src="img/permanent-upgrades.webp" width="1280" height="720" loading="lazy" alt="Permanent upgrades bought with gems" /><figcaption>Permanent upgrades bought with gems.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="wrap">
+        <h2 class="pixel">FAQ</h2>
+        <details open>
+          <summary>Is there a multiplayer version of PokéRogue?</summary>
+          <p>Yes: Pokerogue Online is a fan-made mod of PokéRogue that adds co-op runs with a friend, live PvP battles, Quick Match with a leaderboard and trades.</p>
+        </details>
+        <details>
+          <summary>Is it free? Do I need to install anything?</summary>
+          <p>It is free and runs in your web browser, on PC and on phone. You only create an account so your progress is saved.</p>
+        </details>
+        <details>
+          <summary>How do I play co-op with a friend?</summary>
+          <p>Open <em>Online Play</em> from the title screen, create a co-op room and send the room code to your friend, who joins with <em>Join a room</em>.</p>
+        </details>
+        <details>
+          <summary>Is this the official PokéRogue?</summary>
+          <p>No. Pokerogue Online is an unofficial, fan-made mod. It is not affiliated with PokéRogue or Pagefault Games. Pokémon is a trademark of Nintendo, Creatures Inc. and GAME FREAK inc.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="bottom-cta">
+      <div class="wrap">
+        <a class="cta pixel" href="https://pokerogueonline.coydog-paridae.ts.net/">▶ PLAY NOW</a>
+        <p><a href="https://discord.gg/SJwaYUEDmZ">Join the Discord</a> to find players, report bugs and suggest ideas.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Pokerogue Online is a free, unofficial fan-made mod of PokéRogue. Not affiliated with PokéRogue or Pagefault Games.</p>
+      <p>Pokémon and Pokémon character names are trademarks of Nintendo, Creatures Inc. and GAME FREAK inc.</p>
+    </div>
+  </footer>
+</body>
+</html>
